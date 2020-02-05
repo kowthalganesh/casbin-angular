@@ -17,6 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/casbin-angular/casbin-angular/",
+            "deployUrl": "/casbin-angular/casbin-angular/",
             "outputPath": "dist/casbin-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
