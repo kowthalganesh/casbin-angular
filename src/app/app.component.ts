@@ -23,10 +23,10 @@ export class AppComponent {
                   '[matchers]\n' +
                   'm = g(r.sub, p.sub) && r.obj == p.obj && r.act == p.act';
 
-  public dataSet =  'p, admin, GET, / , puma, , api\n'+
-                    'g, kxg8313, admin, write, puma, , api\n'+
-                    'p, admin, GET, /info, puma, deny, api\n'+
-                    'p, admin, CreateProject, write, puma, , web'
+  public dataSet =  'p, admin, GET, / , application1, , api\n'+
+                    'g, kxg8313, admin, write, application1, , api\n'+
+                    'p, admin, GET, /info, application1, deny, api\n'+
+                    'p, admin, CreateProject, write, application1, , web'
 
   public req: any;
   public result: any;
