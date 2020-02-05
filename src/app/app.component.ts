@@ -29,7 +29,7 @@ export class AppComponent {
                     'p, admin, CreateProject, write, puma, , web'
 
   public req: any;
-  public result;
+  public result: any;
   public userId: any;
 
 
@@ -54,8 +54,9 @@ export class AppComponent {
       method: 'GET',
       originalUrl: '/'
     };
-    this.verifyPermission().then(function(response) {
-      this.result = response;
+    let self = this;
+    this.verifyPermission().then(function(response: any) {
+      self.result = response;
     }.bind(this));
   }
 
@@ -82,7 +83,7 @@ export class AppComponent {
 export class BasicAuthorizer {
   private req: any;
   private enforcer: any;
-  constructor(req, enforcer) {
+  constructor(req: any, enforcer: any) {
       this.req = req;
       this.enforcer = enforcer;
   }
